@@ -1,0 +1,35 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+<aapt:attr name="android:drawable">
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:name="rotationGroup"
+        android:pivotX="300"
+        android:pivotY="300"
+        android:rotation="45.0" >
+    <path
+        android:name="vectorPath"
+        android:fillColor="#FFFFFF"
+        android:fillType="nonZero"
+        android:pathData="M14.4,15.3c-0.2,0.7 -0.3,6.5 -0.2,12.8l0.3,11.4 5.3,0.3 5.2,0.3 0,9.9 0,9.9 -5.2,0.3 -5.3,0.3 0,12.5 0,12.5 12.5,-0 12.5,-0 0.3,-5.3 0.3,-5.2 9.9,-0 9.9,-0 0.3,5.2 0.3,5.3 12.5,-0 12.5,-0 0,-12.5 0,-12.5 -5.2,-0.3 -5.3,-0.3 0,-9.9 0,-9.9 5.3,-0.3 5.2,-0.3 0,-12.5 0,-12.5 -12.5,-0 -12.5,-0 -0.3,5.2 -0.3,5.3 -9.9,-0 -9.9,-0 -0.3,-5.3 -0.3,-5.2 -12.3,-0.3c-9.5,-0.2 -12.4,-0 -12.8,1.1zM37,27l0,10 -10,-0 -10,-0 0,-10 0,-10 10,-0 10,-0 0,10zM83,27l0,10 -10,-0 -10,-0 0,-10 0,-10 10,-0 10,-0 0,10zM60.2,33.7l0.3,5.8 5.8,0.3 5.7,0.3 0,9.9 0,9.9 -5.7,0.3 -5.8,0.3 -0.3,5.7 -0.3,5.8 -9.9,-0 -9.9,-0 -0.3,-5.8 -0.3,-5.7 -5.7,-0.3 -5.8,-0.3 0,-9.9 0,-9.9 5.8,-0.3 5.7,-0.3 0.3,-5.8 0.3,-5.7 9.9,-0 9.9,-0 0.3,5.7zM37,73l0,10 -10,-0 -10,-0 0,-10 0,-10 10,-0 10,-0 0,10zM83,73l0,10 -10,-0 -10,-0 0,-10 0,-10 10,-0 10,-0 0,10z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    </group>
+</vector>
+</aapt:attr>
+    <target android:name="rotationGroup">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="360"
+                android:duration="6000"
+                android:interpolator="@android:interpolator/fast_out_slow_in" />
+        </aapt:attr>
+    </target>
+</animated-vector>

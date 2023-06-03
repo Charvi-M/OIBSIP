@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">metrique</string>
+    <string name="metrique">Metrique</string>
+    <string name="area">Area</string>
+    <string name="length">Length</string>
+    <string name="temperature">Temperature</string>
+    <string name="weight">Weight</string>
+    <string name="speed">Speed</string>
+    <string name="currency">Currency</string>
+    <string name="mtype">Choose Measurement Type</string>
+    <string name="conversion_dashboard">Conversion dashboard</string>
+    <string name="metriqueI">metrique</string>
+
+    <string-array name="Length">
+            <item>Kilometer</item>
+            <item>Centimeter</item>
+            <item>Meter</item>
+        </string-array>
+    <string-array name="Currency">
+        <item>Indian Rupee</item>
+        <item>Kuwaiti Dinar</item>
+        <item>Indonesian Rupiah</item>
+    </string-array>
+
+    <string-array name="Area">
+        <item>Hectare</item>
+        <item>Sq. Meter</item>
+        <item>Acre</item>
+    </string-array>
+
+    <string-array name="Weight">
+        <item>Gram</item>
+        <item>Kilogram</item>
+        <item>Pound</item>
+    </string-array>
+
+    <string-array name="Temperature">
+        <item>Kelvin</item>
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string-array name="Speed">
+        <item>Mile/hour</item>
+        <item>Meter/second</item>
+        <item>Kilometer/hour</item>
+    </string-array>
+</resources>

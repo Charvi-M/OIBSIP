@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/icons8_unit_100" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="324dp"
+        android:layout_height="47dp"
+        android:text="@string/mtype"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageButton
+        android:id="@+id/len"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round"
+        android:contentDescription="@string/length"
+        android:cropToPadding="false"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toEndOf="@+id/temps"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.744"
+        app:srcCompat="@drawable/measuring_tape" />
+
+    <ImageButton
+        android:id="@+id/weights"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round"
+        android:contentDescription="@string/weight"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/speeds"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.126"
+        app:srcCompat="@drawable/weight" />
+
+    <ImageButton
+        android:id="@+id/areas"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round"
+        android:clickable="true"
+        android:contentDescription="@string/area"
+        android:focusable="auto"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/len"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.744"
+        app:srcCompat="@drawable/area" />
+
+    <ImageButton
+        android:id="@+id/speeds"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round"
+        android:contentDescription="@string/length"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toEndOf="@+id/notes"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.126"
+        app:srcCompat="@drawable/speed" />
+
+    <ImageButton
+        android:id="@+id/temps"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round"
+        android:contentDescription="@string/temperature"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.744"
+        app:srcCompat="@drawable/temperature" />
+
+    <ImageButton
+        android:id="@+id/notes"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/round"
+        android:contentDescription="@string/currency"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.126"
+        app:srcCompat="@drawable/money_currency"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/currency"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/temps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes"
+        app:layout_constraintVertical_bias="0.317"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:text="@string/speed"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/len"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="@+id/currency"
+        app:layout_constraintTop_toBottomOf="@+id/speeds"
+        app:layout_constraintVertical_bias="0.356"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:text="@string/weight"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/areas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toEndOf="@+id/speed"
+        app:layout_constraintTop_toBottomOf="@+id/weights"
+        app:layout_constraintVertical_bias="0.298"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tempe"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:text="@string/temperature"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/length"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temps"
+        app:layout_constraintVertical_bias="0.265"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/length"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/area"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/len"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/area"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/areas"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="189dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/almendra_bold"
+        android:text="@string/metrique"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
