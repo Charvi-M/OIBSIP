@@ -78,7 +78,7 @@ public class length extends AppCompatActivity implements AdapterView.OnItemSelec
             try {
                 return Double.parseDouble(x);
             } catch(Exception e) {
-                Toast.makeText(Currencies.this, "Enter a Value", Toast.LENGTH_SHORT).show();
+                Toast.makeText(length.this, "Enter a Value", Toast.LENGTH_SHORT).show();
                 return 1;
             }
         }
