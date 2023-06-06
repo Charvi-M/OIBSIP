@@ -50,7 +50,7 @@ public class Area extends AppCompatActivity implements AdapterView.OnItemSelecte
         Spinner spinner = findViewById(R.id.tunit_spinner);
         Spinner tspinner = findViewById(R.id.unit_spinner);
         String s = value.getText().toString();
-        double val1 = Double.parseDouble(s);
+        double val1 = toDouble(s);
         int index=spinner.getSelectedItemPosition();
         int index1=tspinner.getSelectedItemPosition();
         double res = 0;
