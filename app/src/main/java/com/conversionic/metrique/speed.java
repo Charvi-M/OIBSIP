@@ -78,7 +78,7 @@ public class speed extends AppCompatActivity implements AdapterView.OnItemSelect
             try {
                 return Double.parseDouble(x);
             } catch(Exception e) {
-                Toast.makeText(Currencies.this, "Enter a Value", Toast.LENGTH_SHORT).show();
+                Toast.makeText(speed.this, "Enter a Value", Toast.LENGTH_SHORT).show();
                 return 1;
             }
         }
