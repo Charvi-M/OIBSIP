@@ -73,4 +73,15 @@ public class Area extends AppCompatActivity implements AdapterView.OnItemSelecte
         result.setText("The converted value is "+res);
 
     }
+    double toDouble(String x) {
+        if (x != null && x.length() > 0) {
+            try {
+                return Double.parseDouble(x);
+            } catch(Exception e) {
+                Toast.makeText(Area.this, "Enter a Value", Toast.LENGTH_SHORT).show();
+                return 1;
+            }
+        }
+        else return 0;
+    }
 }
