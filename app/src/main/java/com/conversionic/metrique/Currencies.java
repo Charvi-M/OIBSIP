@@ -50,7 +50,7 @@ public class Currencies extends AppCompatActivity implements AdapterView.OnItemS
         Spinner spinner = findViewById(R.id.tunit_spinner);
         Spinner tspinner = findViewById(R.id.unit_spinner);
         String s = value.getText().toString();
-        double val1 = Double.parseDouble(s);
+        double val1 = toDouble(s);
         int index=spinner.getSelectedItemPosition();
         int index1=tspinner.getSelectedItemPosition();
         double res = 0;
@@ -72,5 +72,16 @@ public class Currencies extends AppCompatActivity implements AdapterView.OnItemS
         }
         result.setText("The converted value as of june-2023 is "+res);
 
+    }
+     double toDouble(String x) {
+        if (x != null && x.length() > 0) {
+            try {
+                return Double.parseDouble(x);
+            } catch(Exception e) {
+                Toast.makeText(Currencies.this, "Enter a Value", Toast.LENGTH_SHORT).show();
+                return 1;
+            }
+        }
+        else return 0;
     }
 }
