@@ -81,7 +81,7 @@ public class temperature extends AppCompatActivity implements AdapterView.OnItem
             try {
                 return Double.parseDouble(x);
             } catch(Exception e) {
-                Toast.makeText(Currencies.this, "Enter a Value", Toast.LENGTH_SHORT).show();
+                Toast.makeText(temperature.this, "Enter a Value", Toast.LENGTH_SHORT).show();
                 return 1;
             }
         }
